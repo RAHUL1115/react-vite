@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Logo from '../assets/logo.png';
 
 function Navbar() {
 
@@ -7,12 +8,12 @@ function Navbar() {
       <div className="container flex flex-wrap items-center justify-between mx-auto">
         <Link to="/" className="flex items-center">
           <img
-            src="https://flowbite.com/docs/images/logo.svg"
+            src={Logo}
             className="h-6 mr-3 sm:h-9"
             alt="Flowbite Logo"
           />
           <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
-            Flowbite
+            Dummy App
           </span>
         </Link>
         <button
@@ -40,12 +41,12 @@ function Navbar() {
         <div className="hidden w-full md:block md:w-auto" id="navbar-default">
           <ul className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
-              <Link to="/" className="active-link">
+              <Link to="/" className="active-link text-base">
                 Home
               </Link>
             </li>
             <li>
-              <Link to="/404-not-found" className="link">
+              <Link to="/404-not-found" className="link text-base">
                 404
               </Link>
             </li>

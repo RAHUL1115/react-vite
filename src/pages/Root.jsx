@@ -1,27 +1,27 @@
 import { useEffect, useState } from "react";
-import { Button, Tooltip, Snackbar } from "@mui/material";
+import { Button, Tooltip } from "@mui/material";
 import Layout1 from "../layout/Layout1";
 
 function App() {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    console.log("mounted")
-    return function() {
-      console.log("unmounted")
-    }
+    console.log("mounted");
+    return function () {
+      console.log("unmounted");
+    };
   });
 
   function increament() {
-    if(count == 100)  {
-      return
+    if (count == 100) {
+      return;
     }
     setCount(count + 1);
   }
 
   function decrement() {
-    if(count == 0)  {
-      return
+    if (count == 0) {
+      return;
     }
     setCount(count - 1);
   }
